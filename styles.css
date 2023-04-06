@@ -1,0 +1,67 @@
+body{
+    margin: 0px;
+}
+header {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    background-color: #264653;
+    height: 25vh;
+}
+
+p {
+    color: #f5f5f5;
+}
+
+.header-left {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.header-left p {
+    font-size: 25px;
+    color: #f5f5f5;
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-icon {
+    height: 35px;
+    padding-right: 15px;
+}
+
+.header-right {
+    border: 2px blue dashed;
+}
+
+.user-login {
+    border: purple 1px dashed;
+    display: flex;
+    align-items: center;
+
+}
+
+.user-icon {
+    height: 30px;
+    margin: 0px 10px;
+}
+
+.user-dropdown {
+    height: 30px;
+    margin: 0px 10px;
+}
+
+main {
+    border: 2px solid red;
+    height: 100vh;
+}
+
+.pet-card {
+    border: 1px orange dashed;
+}

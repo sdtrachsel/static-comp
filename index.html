@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html  lang="en">
 
 <head>
   <link rel="stylesheet" href="./styles.css">
+  <meta charset="utf-8"> 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pet Rescue </title>
   <!-- font choice -->
@@ -10,28 +11,34 @@
 
 <body>
   <header>
-    <div>
-      <img src="" alt=""><!-- Give Icon-->
-      <p>Give</p>
-      <img src="" alt=""><!-- Volunteer Icon -->
-      <p>Volunteer</p>
-      <img src="" alt=""><!-- Resources icon-->
-      <p>Resources</p>
-    </div>
-    <div>
-      <div>
-        <img src="" alt=""><!-- user icon  -->
-        <p>Susie Q. User</p>
-        <img src="" alt=""><!-- down arrow icon  -->
+    <section class="header-left">
+      <div class="nav-link">
+        <img src="./images/donation-icon.png" alt="give icon" class="nav-icon">
+        <p>Give</p>
       </div>
-      <img src="" alt=""> <!-- logo -->
-    </div>
+      <div class="nav-link">
+        <img src="./images/volunteer-icon.png" alt="volunteer icon" class="nav-icon">
+        <p>Volunteer</p>
+      </div>
+      <div class="nav-link">
+        <img src="./images/resources-icon.png" alt="resources list icon" class="nav-icon">
+        <p>Resources</p>
+      </div>
+    </section>
+    <section class="header-right">
+      <div class="user-login">
+        <img src="./images/user-icon-white.png" alt="user icon" class="user-icon">
+        <p>Susie Q. User</p>
+        <img src="./images/down-arrow-icon.png" alt="user menu open" class="user-dropdown">
+      </div>
+      <img src="" alt=""> logo <!-- logo -->
+    </section>
   </header>
   <main>
     <h1>Pets for Adoption</h1>
-    <section>
+    <section class="pet-card">
       <!-- ---------start one card----------- -->
-      <section> <!-- Top of Card background is a pet -->
+      <section class="pet-card-top"> <!-- Top of Card background is a pet -->
         <div>
           <!-- icon w/ hover -->
         </div>
@@ -40,7 +47,7 @@
           <p> 02 </p>
         </div>
       </section>
-      <section> <!-- bottom of card containing text/links -->
+      <section class="pet-card-bottom"> <!-- bottom of card containing text/links -->
         <h2>Pet Name</h2>
         <p>birthday/age</p>
         <p>pet description</p> <!-- background is grayed -->
