@@ -1,15 +1,17 @@
-body{
+body {
     margin: 0px;
+    font-family: 'Raleway', sans-serif;
 }
+
 header {
-    /* border: 2px solid red; */
+
     display: flex;
     justify-content: space-between;
     background-color: #264653;
     height: 25vh;
 }
 
-p {
+header p {
     color: #f5f5f5;
 }
 
@@ -22,7 +24,6 @@ p {
 
 .header-left p {
     font-size: 25px;
-    color: #f5f5f5;
 }
 
 .nav-link {
@@ -44,7 +45,6 @@ p {
     border: purple 1px dashed;
     display: flex;
     align-items: center;
-
 }
 
 .user-icon {
@@ -57,11 +57,119 @@ p {
     margin: 0px 10px;
 }
 
+/* -------- main page -------- */
 main {
     border: 2px solid red;
-    height: 100vh;
+    height: 100%;
+    padding: 10px 20px;
+    background-color: #dddddd;
+
+}
+
+h1 {
+    color: #E76F51;
+}
+
+.pet-cards {
+    border: 2px black solid;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .pet-card {
     border: 1px orange dashed;
+    margin-bottom: 15px;
+    width: 24%;
+    height: 500px;
+    background-color: #f5f5f5;
+}
+
+.margin-right {
+    margin-right: 10px;
+}
+
+.pet-card-top {
+    border: 1px green dashed;
+    background-color: #E76F51;
+    height: 36%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.favorite {
+    height: 50%;
+    filter: brightness(100%);
+}
+
+.views {
+    /* border: 1px palevioletred solid; */
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 20%;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+
+.views p {
+    margin: 0px;
+    color: #f5f5f5;
+}
+
+.views-title {
+    font-size: smaller;
+}
+
+.view-count{
+    line-height: 40px;
+    font-size: 45px;
+    /* font-weight: bolder; */
+    margin-top: 0px;
+}
+.cat-one {
+    background: linear-gradient(rgba(97, 96, 96, 0.5), rgba(97, 96, 96, 0.5)), url(./images/edit-cat1.png);
+    background-size: cover;
+}
+
+.turtle {
+    background: linear-gradient(rgba(97, 96, 96, 0.5), rgba(97, 96, 96, 0.5)), url(./images/edit-turtle.png);
+    background-size: cover;
+}
+
+.dog-one {
+    background: linear-gradient(rgba(97, 96, 96, 0.5), rgba(97, 96, 96, 0.5)), url(./images/edit-dog1.png);
+    background-size: cover;
+}
+
+.hamster {
+    background: linear-gradient(rgba(97, 96, 96, 0.5), rgba(97, 96, 96, 0.5)), url(./images/edit-hamster.png);
+    background-size: cover;
+}
+
+.fish {
+    background-image: url(./images/edit-fish.png);
+    background-size: cover;
+}
+
+.cat-two {
+    background-image: url(./images/edit-cat2.png);
+    background-size: cover;
+}
+
+.iguana {
+    background-image: url(./images/edit-iguana.png);
+    background-size: cover;
+}
+
+.dog-two {
+    background-image: url(./images/edit-dog2.png);
+    background-size: cover;
+}
+
+.pet-card-bottom {
+    border: 1px blue dashed;
+    height: 63%;
+    padding-left: 10px;
 }
