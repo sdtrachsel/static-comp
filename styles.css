@@ -1,10 +1,10 @@
 body {
     margin: 0px;
     font-family: 'Raleway', sans-serif;
+    overflow: scroll;
 }
 
 header {
-
     display: flex;
     justify-content: space-between;
     background-color: #264653;
@@ -42,7 +42,6 @@ header p {
 }
 
 .user-login {
-    border: purple 1px dashed;
     display: flex;
     align-items: center;
 }
@@ -59,19 +58,16 @@ header p {
 
 /* -------- main page -------- */
 main {
-    border: 2px solid red;
     height: 100%;
     padding: 10px 20px;
     background-color: #dddddd;
-
 }
 
 h1 {
-    color: #E76F51;
+    color: #2a9d8f;
 }
 
 .pet-cards {
-    border: 2px black solid;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -79,11 +75,11 @@ h1 {
 }
 
 .pet-card {
-    border: 1px orange dashed;
+    width: 330px ;
+    height: 510px;
     margin-bottom: 15px;
-    width: 24%;
-    height: 500px;
     background-color: #f5f5f5;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .margin-right {
@@ -91,8 +87,6 @@ h1 {
 }
 
 .pet-card-top {
-    border: 1px green dashed;
-    background-color: #E76F51;
     height: 36%;
     display: flex;
     justify-content: space-between;
@@ -104,7 +98,6 @@ h1 {
 }
 
 .views {
-    /* border: 1px palevioletred solid; */
     margin-right: 10px;
     margin-top: 10px;
     width: 20%;
@@ -122,12 +115,13 @@ h1 {
     font-size: smaller;
 }
 
-.view-count{
+.view-count {
+    font-family: sans-serif;
     line-height: 40px;
-    font-size: 45px;
-    /* font-weight: bolder; */
+    font-size: 40px;
     margin-top: 0px;
 }
+
 .cat-one {
     background: linear-gradient(rgba(97, 96, 96, 0.5), rgba(97, 96, 96, 0.5)), url(./images/edit-cat1.png);
     background-size: cover;
@@ -149,27 +143,74 @@ h1 {
 }
 
 .fish {
-    background-image: url(./images/edit-fish.png);
+    background: linear-gradient(rgba(97, 96, 96, 0.5), rgba(97, 96, 96, 0.5)), url(./images/edit-fish.png);
     background-size: cover;
 }
 
 .cat-two {
-    background-image: url(./images/edit-cat2.png);
+    background: linear-gradient(rgba(97, 96, 96, 0.5), rgba(97, 96, 96, 0.5)), url(./images/edit-cat2.png);
     background-size: cover;
 }
 
 .iguana {
-    background-image: url(./images/edit-iguana.png);
+    background: linear-gradient(rgba(97, 96, 96, 0.5), rgba(97, 96, 96, 0.5)), url(./images/edit-iguana.png);
     background-size: cover;
 }
 
 .dog-two {
-    background-image: url(./images/edit-dog2.png);
+    background: linear-gradient(rgba(97, 96, 96, 0.5), rgba(97, 96, 96, 0.5)), url(./images/edit-dog2.png);
     background-size: cover;
 }
 
 .pet-card-bottom {
-    border: 1px blue dashed;
     height: 63%;
-    padding-left: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
+
+h2 {
+    color: #616161;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.age-text {
+    margin-top: 0px;
+    font-size: smaller;
+    font-weight: 400;
+    color: #a19f9f;
+}
+
+.description {
+    background: #dddddd;
+    height: 60px;
+    padding: 10px;
+    border: #dddddd 1px solid;
+    border-radius: 2%;
+    color: #626161;
+    font-weight: 600;
+}
+
+h3 {
+    color: #616161;
+    font-size: medium;
+    margin: 0px;
+    font-size: 13px;
+}
+
+.info-text {
+    color: #616161;
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.photo-count{
+    color: #2a9d8f;
+    font-family: sans-serif;
+    margin: 0px;
+    padding-top: 1px;
+    font-size: 45px;
+    line-height: 40px;
+}
+
