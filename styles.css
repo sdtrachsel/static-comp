@@ -5,45 +5,69 @@ body {
 }
 
 header {
+    height: 25vh;
+    background-color: #264653;
+    color: #f5f5f5;
     display: flex;
     justify-content: space-between;
-    background-color: #264653;
-    height: 25vh;
-}
-
-header p {
-    color: #f5f5f5;
 }
 
 .header-left {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-    width: 40%;
-}
+    width: 35%;
+    margin-left: 15px;
 
-.header-left p {
-    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .nav-link {
+    margin-bottom: 20px;
+    color: #f5f5f5;
+    font-size: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    line-height: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color: #2a9d8f;
+    font-weight: bolder;
 }
 
 .nav-icon {
-    height: 35px;
-    padding-right: 15px;
+    height: 25px;
+    padding-right: 10px;
 }
 
 .header-right {
-    border: 2px blue dashed;
+    margin-right: 15px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.logo {
+    width: 90%;
+    margin-bottom: 20px;
 }
 
 .user-login {
+    margin-top: 10px;
     display: flex;
     align-items: center;
+    cursor: pointer;
+}
+
+.user-login:hover {
+    font-weight: bolder;
+    color: #2a9d8f;
 }
 
 .user-icon {
@@ -65,6 +89,7 @@ main {
 
 h1 {
     color: #2a9d8f;
+    font-weight: 400;
 }
 
 .pet-cards {
@@ -75,15 +100,11 @@ h1 {
 }
 
 .pet-card {
-    width: 330px ;
+    width: 330px;
     height: 510px;
     margin-bottom: 15px;
     background-color: #f5f5f5;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.margin-right {
-    margin-right: 10px;
 }
 
 .pet-card-top {
@@ -93,8 +114,20 @@ h1 {
 }
 
 .favorite {
-    height: 50%;
-    filter: brightness(100%);
+    height: 75px;
+    width: 75px;
+    cursor: pointer;
+    background-image: url('./images/favorite-wht.png');
+    background-size: cover;
+}
+
+.favorite:hover {
+    height: 75px;
+    width: 75px;
+    cursor: pointer;
+    background-image: url('./images/favorite-green.png');
+    background-size: cover;
+
 }
 
 .views {
@@ -182,13 +215,14 @@ h2 {
 }
 
 .description {
-    background: #dddddd;
     height: 60px;
     padding: 10px;
+    background: #dddddd;
     border: #dddddd 1px solid;
     border-radius: 2%;
     color: #626161;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 400;
 }
 
 h3 {
@@ -198,19 +232,24 @@ h3 {
     font-size: 13px;
 }
 
-.info-text {
+.personality-text {
     color: #616161;
     margin-top: 5px;
     font-size: 20px;
     font-weight: 600;
 }
 
-.photo-count{
+.photo-count {
     color: #2a9d8f;
     font-family: sans-serif;
     margin: 0px;
     padding-top: 1px;
     font-size: 45px;
     line-height: 40px;
+    cursor: pointer;
 }
 
+.photo-count:hover {
+    color: #2a9d8f;
+    font-weight: 700;
+}
